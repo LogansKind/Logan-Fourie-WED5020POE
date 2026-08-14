@@ -1,0 +1,150 @@
+<html>
+<head>
+    <title>Safe Haven Animal Rescue | Volunteer & Sponsor Enquiry</title>
+</head>
+<body>
+
+    <!-- ==========================================
+         HEADER & GLOBAL NAVIGATION MENU
+         ========================================== -->
+    <header>
+        <div>
+                <img src="images/Logo.jpg" alt="Safe Haven Animal Rescue Logo" class="site-logo"  width="20%>
+				                <div class="brand-text">
+
+            <h1>Safe Haven Animal Rescue</h1>
+            <p><em>Registered Non-Profit Welfare Organisation</em></p>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html"><strong>Enquiry</strong></a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- ==========================================
+         MAIN CONTENT AREA
+         ========================================== -->
+    <main>
+        
+        <section>
+            <h2>Volunteer & Sponsorship Enquiry Form</h2>
+            <p>As a non-profit organization, Safe Haven relies on dedicated volunteers and generous sponsors to keep our doors open. Please complete the form below to register your interest in volunteering, fostering, or becoming a corporate sponsor.</p>
+        </section>
+
+        <hr>
+
+        <!-- ENQUIRY FORM -->
+        <section>
+            <form action="#" method="post">
+                
+                <!-- Personal Details Fieldset -->
+                <fieldset>
+                    <legend><strong>1. Personal / Contact Details</strong></legend>
+                    <br>
+                    
+                    <label for="fullname">Full Name & Surname:*</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="e.g. Jane Doe" required>
+                    <br><br>
+
+                    <label for="email">Email Address:*</label><br>
+                    <input type="email" id="email" name="email" placeholder="e.g. jane@example.com" required>
+                    <br><br>
+
+                    <label for="phone">Phone / Contact Number:*</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. 082 123 4567" required>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <!-- Enquiry Type Fieldset -->
+                <fieldset>
+                    <legend><strong>2. Enquiry Details</strong></legend>
+                    <br>
+
+                    <label for="enquiry-type">How would you like to get involved?*</label><br>
+                    <select id="enquiry-type" name="enquiry_type" required>
+                        <option value="">-- Please Select an Option --</option>
+                        <option value="individual-volunteer">Individual Volunteer (Shelter Care / Events)</option>
+                        <option value="corporate-sponsor">Corporate Sponsor / Financial Support</option>
+                        <option value="foster-parent">Become a Foster Parent</option>
+                        <option value="pet-adoption">Pet Adoption Enquiry</option>
+                        <option value="general-inquiry">General NPO Enquiry</option>
+                    </select>
+                    <br><br>
+
+                    <label for="location-preference">Preferred Shelter Location:*</label><br>
+                    <select id="location-preference" name="location_preference" required>
+                        <option value="">-- Select Preferred Branch --</option>
+                        <option value="cape-town">Cape Town Central Shelter</option>
+                        <option value="kzn-branch">KZN Branch Shelter</option>
+                        <option value="remote">Remote / Flexible</option>
+                    </select>
+                    <br><br>
+
+                    <p><strong>Availability (For Volunteers/Foster Parents):</strong></p>
+                    <input type="checkbox" id="avail-weekdays" name="availability[]" value="weekdays">
+                    <label for="avail-weekdays">Weekdays</label><br>
+
+                    <input type="checkbox" id="avail-weekends" name="availability[]" value="weekends">
+                    <label for="avail-weekends">Weekends</label><br>
+
+                    <input type="checkbox" id="avail-events" name="availability[]" value="special-events">
+                    <label for="avail-events">Special Events & Fundraising Drives</label>
+                    <br><br>
+
+                    <label for="message">Message / Skills / How You Can Help:*</label><br>
+                    <textarea id="message" name="message" rows="6" cols="50" placeholder="Tell us more about your background, skills, or sponsorship interest..." required></textarea>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <!-- Submission Controls -->
+                <button type="submit">Submit Enquiry</button>
+                <button type="reset">Reset Form</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- ==========================================
+         FOOTER SECTION
+         ========================================== -->
+    <footer>
+        <h3>Safe Haven Animal Rescue</h3>
+        <p>Dedicated to animal welfare, emergency rescue, rehabilitation, and community education.</p>
+        
+        <p><strong>Quick Navigation:</strong></p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="enquiry.html">Volunteer & Sponsor Enquiry</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <p>
+            <strong>Follow Our Work:</strong> 
+            <a href="https://www.instagram.com/safehaven.dogrescue/" target="_blank">Instagram</a> | 
+            <a href="https://www.facebook.com/SafeHavenCatRescueKZN/" target="_blank">Facebook</a>
+			 <img src="images/Caged_dogs.jpg" alt="Dogs at the shelter"  width="30%>
+        </p>
+		
+
+        <p><small>&copy; 2026 Safe Haven Animal Rescue. All Rights Reserved.</small></p>
+    </footer>
+
+</body>
+</html>
