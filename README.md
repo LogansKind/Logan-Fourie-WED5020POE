@@ -18,20 +18,18 @@ The site was designed to be accessible, user-friendly, and optimized for all dev
 ---
 
 ## Website Structure
-/ (root)
-├── index.html          # Home / Landing page
-├── about.html          # About Us - Mission & Team
-├── services.html       # Adoption, Services & Animals
-├── enquiry.html        # Enquiry / Volunteering Form
-├── contact.html        # Contact Details & Location
-├── css/
-│   └── styles.css      # Main stylesheet
-├── js/
-│   └── script.js       # Main JavaScript functionality
-├── images/             # All site images
-├── sitemap.xml         # SEO sitemap
-├── robots.txt          # SEO crawler file
-└── README.md           # Project documentation
+| File / Folder | Description |
+| :--- | :--- |
+| `index.html` | Home / Landing page |
+| `about.html` | About Us - Mission & Team |
+| `services.html` | Services, Adoption & Animals |
+| `enquiry.html` | Volunteer & Enquiry Form |
+| `contact.html` | Contact Details & Map |
+| `css/styles.css` | Main stylesheet |
+| `js/script.js` | JavaScript functionality |
+| `images/` | All site images |
+| `sitemap.xml` | SEO sitemap |
+| `robots.txt` | SEO crawler rules |
 
 
 ## Features
