@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer & Sponsor Enquiry - Join Safe Haven NPO | Validated Form</title>
+    <meta name="description" content="Enquire about volunteering, corporate sponsorship, fostering or adopting. JS validated form with instant AJAX response on cost R850 adoption, R500 sponsorship, availability Mon-Sat.">
+    <meta name="keywords" content="volunteer animal shelter Cape Town, sponsor animal NPO, foster parent KZN, dog adoption enquiry, cat adoption form">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-area">
+                <img src="images/Logo.jpg" alt="Safe Haven Animal Rescue Logo" class="site-logo">
+                <div class="brand-text"><h1>Safe Haven</h1><span>Animal Rescue NPO</span></div>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Volunteer & Sponsorship Enquiry Form - Join Safe Haven NPO Cape Town KZN</h1>
+            <p>As a non-profit organization, Safe Haven relies on volunteers and sponsors. Complete form to register interest - JS validation + AJAX instant response with cost and availability.</p>
+        </div>
+    </section>
+
+    <main class="container form-section">
+        <div class="form-wrapper">
+            <form id="enquiryForm" action="#" method="post" novalidate>
+                <fieldset>
+                    <legend>1. Personal / Contact Details - HTML5 Validation + JS</legend>
+                    <div class="form-group">
+                        <label for="fullname">Full Name & Surname:*</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="e.g. Jane Doe" required minlength="3">
+                        <span class="error-msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:*</label>
+                        <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                        <span class="error-msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone / Contact Number:*</label>
+                        <input type="tel" id="phone" name="phone" placeholder="082 123 4567 - 10 digits starting with 0" required pattern="0[0-9]{9}">
+                        <span class="error-msg"></span>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Enquiry Details - Dynamic Response on Cost & Availability</legend>
+                    <div class="form-group">
+                        <label for="enquiry-type">How would you like to get involved?* (Triggers cost/availability response)</label>
+                        <select id="enquiry-type" name="enquiry_type" required>
+                            <option value="">-- Please Select --</option>
+                            <option value="individual-volunteer">Individual Volunteer (Shelter Care / Events) - Free</option>
+                            <option value="corporate-sponsor">Corporate Sponsor / Financial Support - From R500/month</option>
+                            <option value="foster-parent">Become a Foster Parent - Free Supplies</option>
+                            <option value="pet-adoption">Pet Adoption Enquiry - R850 fee</option>
+                            <option value="general-inquiry">General NPO Enquiry</option>
+                        </select>
+                        <span class="error-msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="location-preference">Preferred Shelter Location:*</label>
+                        <select id="location-preference" name="location_preference" required>
+                            <option value="">-- Select Preferred Branch --</option>
+                            <option value="cape-town">Cape Town Central Shelter 12 Hope Street Gardens</option>
+                            <option value="kzn-branch">KZN Branch Shelter 45 Main Road Gillitts</option>
+                            <option value="remote">Remote / Flexible</option>
+                        </select>
+                        <span class="error-msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Availability (For Volunteers/Foster Parents):</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label"><input type="checkbox" value="weekdays"> Weekdays Mon-Fri</label>
+                            <label class="checkbox-label"><input type="checkbox" value="weekends"> Weekends</label>
+                            <label class="checkbox-label"><input type="checkbox" value="special-events"> Special Events & Fundraising Drives</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message / Skills / How You Can Help:* (min 20 chars)</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us more about your background, skills, sponsorship interest... min 20 characters" required minlength="20"></textarea>
+                        <span class="error-msg"></span>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit">Submit Enquiry (AJAX Validated + Cost Response)</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+                <div id="enquirySuccess" class="success-box"></div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-info"><h3>Safe Haven Animal Rescue</h3><p>Enquiry form - volunteer, sponsor, foster, adoption.</p></div>
+            <div class="footer-links"><h4>Quick Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div class="footer-social"><h4>Follow</h4><p><a href="https://www.instagram.com/safehaven.dogrescue/" target="_blank" rel="noopener">Instagram</a> | <a href="https://www.facebook.com/SafeHavenCatRescueKZN/" target="_blank" rel="noopener">Facebook</a></p></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Safe Haven Animal Rescue. All Rights Reserved.</p></div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
